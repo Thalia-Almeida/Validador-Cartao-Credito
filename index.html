@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validador de Cartão de Crédito</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../base/icon.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <h1>Validador de Cartão de Crédito</h1>
+
+    <label for="numero">Número do cartão:</label>
+    <input type="text" id="numero" placeholder="Ex: 4532 8990 5349 2595">
+
+    <label for="data">Data de Vadidade(MM/AA):</label>
+    <input type="text" id="data" placeholder="Ex: 12/25">
+
+    <label for="cvv">Código de Segurança(CVV):</label>
+    <input type="text" id="cvv" placeholder="Ex: 123">
+
+    <button onclick="validar()">Validar Cartão</button>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="node.js"></script>
+</body>
+</html>
